@@ -19,18 +19,20 @@ Needs <b>gatttool</b> from bluez package.
 **bbloadlines &lt;MAC address&gt; &lt;file&gt;**  
 </b>
   
-The script will hang while the BTLE device is opened by the bbconsole application.  
+The script will hang if the BTLE device is already open in the bbconsole application.  
 
 You can use hcitool to discover the MAC address of any BlueBasic devices.  
 
 Example:  
   
-* pi@raspberrypi-hydro:~/git/bbconsole $ sudo hcitool lescan* 
-* LE Scan ...*  
-* 68:64:4B:4A:53:24 (unknown)*  
-* 68:64:4B:4A:53:24 (unknown)*  
-* B4:99:4C:21:5A:97 BASIC#97*  
-* B4:99:4C:21:5A:97 (unknown)*  
+ pi@raspberrypi-hydro:~/git/bbconsole $ sudo hcitool lescan 
+ LE Scan ...  
+ 68:64:4B:4A:53:24 (unknown)  
+ 68:64:4B:4A:53:24 (unknown)  
+ B4:99:4C:21:5A:97 BASIC#97  
+ B4:99:4C:21:5A:97 (unknown)  
   
 Note that all BlueBasic devices return a name such as BASIC#NN.  
+This could be used to provide a device selection capability.  
+  
 Once again, the BlueBasic device will not show if it is open in bbconsole.  
