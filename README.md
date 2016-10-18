@@ -1,4 +1,6 @@
-Linux upload script for <b>[BLE BlueBasic interpreter]</b> (https://github.com/aanon4/BlueBasic) .  
+#bbload
+#bbloadlines
+Linux upload script for <b>BLE BlueBasic interpreter</b> (https://github.com/aanon4/BlueBasic) .  
 An (only?) option to upload the bluebasic code for non-OSX world.  
 
 This script reads from a file and uploads the content of that file to the selected device.  
@@ -25,13 +27,13 @@ You can use hcitool to discover the MAC address of any BlueBasic devices.
 
 Example:  
   
- pi@raspberrypi-hydro:~/git/bbconsole $ sudo hcitool lescan 
- LE Scan ...  
- 68:64:4B:4A:53:24 (unknown)  
- 68:64:4B:4A:53:24 (unknown)  
- B4:99:4C:21:5A:97 BASIC#97  
- B4:99:4C:21:5A:97 (unknown)  
-  
+<b>$sudo hcitool lescan</b>   
+<i>LE Scan ...    
+68:64:4B:4A:53:24 (unknown)    
+68:64:4B:4A:53:24 (unknown)    
+B4:99:4C:21:5A:97 BASIC#97    
+B4:99:4C:21:5A:97 (unknown)</i> 
+    
 Note that all BlueBasic devices return a name such as BASIC#NN.  
 This could be used to provide a device selection capability.  
   
