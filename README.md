@@ -25,12 +25,12 @@ You can use hcitool to discover the MAC address of any BlueBasic devices.
 
 Example:  
   
-** pi@raspberrypi-hydro:~/git/bbconsole $ sudo hcitool lescan** 
-** LE Scan ...**  
-** 68:64:4B:4A:53:24 (unknown)**  
-** 68:64:4B:4A:53:24 (unknown)**  
-** B4:99:4C:21:5A:97 BASIC#97**  
-** B4:99:4C:21:5A:97 (unknown)**  
+* pi@raspberrypi-hydro:~/git/bbconsole $ sudo hcitool lescan* 
+* LE Scan ...*  
+* 68:64:4B:4A:53:24 (unknown)*  
+* 68:64:4B:4A:53:24 (unknown)*  
+* B4:99:4C:21:5A:97 BASIC#97*  
+* B4:99:4C:21:5A:97 (unknown)*  
   
 Note that all BlueBasic devices return a name such as BASIC#NN.  
 Once again, the BlueBasic device will not show if it is open in bbconsole.  
